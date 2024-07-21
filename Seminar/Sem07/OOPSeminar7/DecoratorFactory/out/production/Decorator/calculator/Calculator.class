@@ -1,0 +1,23 @@
+package OOP.Seminar.Sem07.OOPSeminar7.DecoratorFactory.out.production.Decorator.calculator;
+
+public final class Calculator implements Calculable {
+    private int primaryArg;
+ 
+    public Calculator(int primaryArg) {
+       this.primaryArg = primaryArg;
+    }
+ 
+    public Calculable sum(int arg) {
+       this.primaryArg += arg;
+       return this;
+    }
+ 
+    public Calculable multi(int arg) {
+       this.primaryArg *= arg;
+       return this;
+    }
+ 
+    public int getResult() {
+       return this.primaryArg;
+    }
+ }

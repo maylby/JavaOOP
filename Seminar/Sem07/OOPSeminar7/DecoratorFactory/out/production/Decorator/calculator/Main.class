@@ -1,0 +1,13 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package calculator;
+
+public class Main {
+   public Main() {
+   }
+
+   public static void main(String[] args) {
+      ICalculableFactory calculableFactory = new CalculableFactory();
+      ViewCalculator view = new ViewCalculator(calculableFactory);
+      view.run();
+   }
+}

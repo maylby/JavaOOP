@@ -1,0 +1,11 @@
+package OOP.Seminar.Sem07.OOPSeminar7.DecoratorFactory.out.production.Decorator.calculator;
+
+public class CalculableFactory implements ICalculableFactory {
+    public CalculableFactory() {
+    }
+ 
+    public Calculable create(int primaryArg) {
+       return new Calculator(primaryArg);
+    }
+ }
+ 
